@@ -3,15 +3,15 @@
 1
 
 function reverse(text) {
-	var Ar = text.split('');
-	Ar = Ar.reverse();
-	return Ar.join('');
+	text = text.split('');
+	text = text.reverse();
+	return text.join('');
 }
 
 2
 
 function camelise(text) {
-	var Ar = text.split(' ');
+	Ar = text.split(' ');
 	for (var i = 0; i < Ar.length; i++) {
 		var Ar2[] = Ar[i].split('');
 		Ar2[0] = Ar2[0].toUpperCase();
@@ -24,7 +24,7 @@ function camelise(text) {
 3
 
 function isWeekEnd(date) {
-	var thatDay = getDay(date);
+	var thatDay = date.getDay();
 	if (thatDay<2) {
 		return 'Выходной!'
 	} else {
