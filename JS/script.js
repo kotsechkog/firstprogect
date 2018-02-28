@@ -5,7 +5,7 @@
 function reverse(text) {
 	var Ar = text.split('');
 	Ar = Ar.reverse();
-	return Ar.join();
+	return Ar.join('');
 }
 
 2
@@ -18,7 +18,7 @@ function camelise(text) {
 		Ar2[Ar2.length-1] = Ar2[Ar2.length-1].toUpperCase();
 		Ar[i] = Ar2.join(); 
 	}
-	return Ar.join();
+	return Ar.join(' ');
 }
 
 3
